@@ -8,6 +8,17 @@
 
 <!-- Utilized Variables for Each Text Answer Boxes --->
 <?php
+
+//Created Three Mail Function Parameters
+$to      = "rese298@outlook.com";
+$subject = "Aliens Abducted Me Form Submission";
+$message = "hello";
+$headers = "mmorrison15@mail.dccc.edu";
+
+//Called The Mail Function With Three Parameters (Default)
+mail($to, $subject, $message, $headers);
+
+//Created Variables To Hold The Data From The Submission Form
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email = $_POST['email'];
