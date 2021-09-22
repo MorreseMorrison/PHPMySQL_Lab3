@@ -38,7 +38,16 @@ echo "You said there were <b>$how</b> of them.";
 echo "<br>";
 echo "You described them as <b>$description</b>.";
 echo "<br>";
+echo "Did you see Fluffy? You Answered: ";
 //Radio Button Answer, how?
+//Utilized The Array Method. Set Both Radio Buttons To The Array "confirmation[]"
+//Utilized The For Each Loop Method To Loop Through The Array. Assigned It To The Variable "$value"
+foreach($_POST['confirmation'] as $value)
+{
+    //Prints The Value Method
+   print "<b>$value</b>";
+}
+echo "<br>";
 echo "We will contact you at <b>$email</b> if we have any relevant news.";
 echo "<br>";
 echo "You other comments were: <b>$add</b>.";
